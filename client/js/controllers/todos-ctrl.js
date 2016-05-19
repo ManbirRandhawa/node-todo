@@ -35,4 +35,32 @@ angular.module('todoController', [])
 			}
 		};
 
+		/*$scope.checkBox = function() {
+			Todos.put(%scope.)
+
+
+
+		}*/
+
+		/*$scope.deleteItem = function() {
+
+			if ($scope.todo == undefined)
+			{
+				Todos.deletes($scope.todo)
+				.success(function(data)) {
+					$scope.loading = false;
+					$scope.todos = data;
+				});
+			}
+			
+
+		}*/
+
+		/*Todos.put($scope.todo.val)
+			.success(function(data) {
+				$scope.loading = false;
+
+			})*/
+
+
 	}]);

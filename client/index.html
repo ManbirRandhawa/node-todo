@@ -42,9 +42,11 @@
 
 				<div class="checkbox"  ng-repeat="todo in todos">
                                   <label>
-                                  <input type="checkbox"> {{ todo.text }}
+                                  <input type="checkbox" ng-click="checkBox()"ng-model="completedyes"> {{ todo.text }}
                                   </label>
+                                  <button type="submit" class="btn btn-primary btn-lg" ng-click="deleteItem()" ng-model="todo">Delete</button>
                                  </div>
+               
                              
 				<p class="text-center" ng-show="loading">
 					<span class="fa fa-spinner fa-spin fa-3x"></span>

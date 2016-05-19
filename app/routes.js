@@ -38,6 +38,22 @@ module.exports = function(app) {
 
 	});
 
+	/*app.put('/api/todos/:todo/done', function(req,res) {
+
+		Todo.put({
+			done:true
+		}, function(err,todo){
+			if (err)
+			
+				res.send(err);
+
+
+			});
+	});*/
+		
+
+
+
 	// application -------------------------------------------------------------
 	app.get('*', function(req, res) {
 		res.sendfile('./client/index.html'); // load the single view file (angular will handle the page changes on the front-end)
