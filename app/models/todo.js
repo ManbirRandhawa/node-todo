@@ -6,10 +6,6 @@ var TodoSchema =  new mongoose.Schema({
    
 });
 
-TodoSchema.methods.completeIt = function(cb) {
-    this.done = true;
-    this.save(cb);
-};
 
 
 module.exports = mongoose.model('Todo', TodoSchema);
