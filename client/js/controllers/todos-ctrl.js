@@ -35,6 +35,17 @@ angular.module('todoController', [])
 			}
 		};
 
+		// delete a todo after checking it
+   // delete a todo after checking it
+        $scope.deleteTodo = function(id) {
+                $http.delete('/api/todos/' + id)
+                        .success(function(data) {
+                                $scope.todos = data;
+                        })
+                        .error(function(data) {
+                                console.log('Error: ' + data);
+                        });
+        };
 		/*$scope.checkBox = function() {
 			Todos.put(%scope.)
 
